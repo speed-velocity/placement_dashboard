@@ -1,0 +1,6 @@
+{
+  "name": "Placement Progress Bar",
+  "description": "Personal Computer Science placement command center for tracking preparation across DSA, OOPS, DBMS, and System Design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

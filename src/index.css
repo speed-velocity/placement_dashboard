@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-pixel: 'Silkscreen', monospace;
+  --color-canvas: #0c0d10;
+  --color-surface: #14151a;
+  --color-surface-card: #15161c;
+  --color-surface-elevated: #1e1f26;
+  --color-surface-border: #23252e;
+  --color-surface-border-subtle: #1a1b22;
+  --color-vermilion: #f95721;
+  --color-vermilion-subtle: rgba(249, 87, 33, 0.12);
+}
+
+.hardware-card {
+  background: #14151a;
+  border-radius: 1.625rem;
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.75), inset 0 1px 1px rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.hardware-card:hover {
+  border-color: rgba(249, 87, 33, 0.25);
+  box-shadow: 0 20px 42px -10px rgba(0, 0, 0, 0.85), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+.ambient-glow-top-left {
+  background: radial-gradient(circle at 10% 0%, rgba(249, 115, 22, 0.18) 0%, rgba(249, 87, 33, 0.05) 40%, transparent 70%);
+}
+
+/* Custom scrollbar for technical dashboard feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0d10;
+}
+::-webkit-scrollbar-thumb {
+  background: #23252e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #363945;
+}
+
